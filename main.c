@@ -44,64 +44,64 @@ int main()
     switch (num)
     {
     case 1:
-        printf("%s", str1);
         cptoclipboard(str1);
+        printf("1st recovery code Copied Successful");
         break;
     case 2:
-        printf("%s", str2);
         cptoclipboard(str2);
+        printf("2nd recovery code Copied Successful");
         break;
     case 3:
-        printf("%s", str3);
         cptoclipboard(str3);
+        printf("3rd recovery code Copied Successful");
         break;
     case 4:
-        printf("%s", str4);
         cptoclipboard(str4);
+        printf("4th recovery code Copied Successful");
         break;
     case 5:
-        printf("%s", str5);
         cptoclipboard(str5);
+        printf("5th recovery code Copied Successful");
         break;
     case 6:
-        printf("%s", str6);
         cptoclipboard(str6);
+        printf("6th recovery code Copied Successful");
         break;
     case 7:
-        printf("%s", str7);
         cptoclipboard(str7);
+        printf("7th recovery code Copied Successful");
         break;
     case 8:
-        printf("%s", str8);
         cptoclipboard(str8);
+        printf("8th recovery code Copied Successful");
         break;
     case 9:
-        printf("%s", str9);
         cptoclipboard(str9);
+        printf("9th recovery code Copied Successful");
         break;
     case 10:
-        printf("%s", str10);
         cptoclipboard(str10);
+        printf("10th recovery code Copied Successful");
         break;
     case 11:
-        printf("%s", str11);
         cptoclipboard(str11);
+        printf("11th recovery code Copied Successful");
         break;
     case 12:
-        printf("%s", str12);
         cptoclipboard(str12);
+        printf("12th recovery code Copied Successful");
         break;
     case 13:
-        printf("%s", str13);
         cptoclipboard(str13);
+        printf("13th recovery code Copied Successful");
         break;
     case 14:
-        printf("%s", str14);
         cptoclipboard(str14);
+        printf("14th recovery code Copied Successful");
         break;
     case 15:
-        printf("%s", str15);
         cptoclipboard(str15);
+        printf("15th recovery code Copied Successful");
         break;
     default:
         break;
@@ -109,10 +109,11 @@ int main()
     num++;
     if (num == 16)
     {
-        printf("%s\n\n", str16);
         cptoclipboard(str16);
+        printf("16th recovery code Copied Successful");
         printf("The list is end\n");
         num = 1;
+        getchar();
     }
     nf = fopen("temp.bin", "wb");
     fprintf(nf, "%d", num);
