@@ -106,7 +106,6 @@ int main()
     default:
         break;
     }
-    num++;
     if (num == 16)
     {
         cptoclipboard(str16);
@@ -114,6 +113,9 @@ int main()
         printf("The list is end\n");
         num = 1;
         getchar();
+    }
+	else{
+        num++;
     }
     nf = fopen("temp.bin", "wb");
     fprintf(nf, "%d", num);
